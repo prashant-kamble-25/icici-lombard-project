@@ -1,0 +1,36 @@
+.ask-ria-container {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    background: #0b3a63;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 14px 8px 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+}
+
+.ria-avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.ria-text {
+    margin-left: 10px;
+    line-height: 1.2;
+}
+
+.ria-text .title {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ria-text .sub {
+    font-size: 11px;
+    opacity: 0.9;
+}

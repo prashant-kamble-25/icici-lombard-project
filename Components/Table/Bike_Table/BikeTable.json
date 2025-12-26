@@ -1,0 +1,32 @@
+[
+    {
+            "product": "Two Wheeler Vehicle Package Policy (Tenure 1, 2 and 3 years)",
+            "code": "3005/P5",
+            "uin": "IRDAN115RP0015V05201415"
+    },
+    {
+                "product": "5 Years - Two Wheeler Liability Policy",
+                "code": "3005/A5",
+                "uin": "IRDAN115RP0003V01201819"
+    },
+    {
+                "product": "Standalone third party long term two wheeler insurance policy",
+                "code": "3005/A",
+                "uin": "IRDAN115RP0016V01201415"
+    },
+    {
+                "product": "Two wheeler vehicle liability policy",
+                "code": "3005/A",
+                "uin": "IRDAN115RP0016V01200102"
+    },
+    {
+                "product": "Stand-alone own damage two wheeler insurance policy",
+                "code": "3005/O",
+                "uin": "IRDAN115RP0002V02201920"
+    },
+    {
+                "product": "Bundled two wheeler policy",
+                "code": "3005/1B5",
+                "uin": "IRDAN115RP0019V01202122"
+    }
+]

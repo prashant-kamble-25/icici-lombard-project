@@ -1,0 +1,30 @@
+[
+    {
+        "policyNumber": "REN01",
+        "phoneNumber": "1234567890",
+        "vehicleNumber": "MH10CC123",
+        "loanAccountNumber": "LN0123",
+        "name": "SANKALP",
+        "address": "SANGLI",
+        "emailId": "sankalp@gmail.com"
+    },
+   {
+        "policyNumber": "REN02",
+        "phoneNumber": "0987654321",
+        "vehicleNumber": "MH01AA4567",
+        "loanAccountNumber": "LN0456",
+        "name": "AVADHUT",
+        "address": "MUMBAI",
+        "emailId": "avadhut@gmail.com"
+    },
+    {
+        "policyNumber": "REN03",
+        "phoneNumber": "4562584682",
+        "vehicleNumber": "MH12PP0505",
+        "loanAccountNumber": "LN0987",
+        "name": "PAVAN",
+        "address": "PUNE",
+        "emailId": "pavan@gmail.com"
+    }
+   
+]

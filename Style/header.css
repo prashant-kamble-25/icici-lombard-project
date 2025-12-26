@@ -1,0 +1,72 @@
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ebebeb;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height: auto;
+}
+.left{
+    width: 200px;
+    /* border: 1px solid black; */
+}
+.left span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.live-chat {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    /* border: 1px solid black; */
+    
+}
+.right select{
+    margin-left: 0px;
+    /* border: 1px solid red; */
+    width: auto;
+}
+
+
+select {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+}
+
+.advisor-btn {
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.login-btn {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}

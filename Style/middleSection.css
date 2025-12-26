@@ -1,0 +1,26 @@
+.MiddleSection {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.company-name {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.address {
+    margin-bottom: 6px;
+}
+
+.details a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
