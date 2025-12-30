@@ -1,5 +1,3 @@
-import Header from '../../Components/Header/HeaderPage'
-import Navbar from '../../Components/Header/Navbar'
 import AllRenewSection from './AllRenewSection'
 import MiddleSection from '../../Components/Middle_Section/MiddleAddressSection'
 import SocialBar from '../../Components/SocialMedia/SocialBar'
@@ -8,20 +6,18 @@ import InfoFooter from '../../Components/Footer/FooterInfo'
 import InsuranceFooter from '../../Components/Footer/InsuranceFooter'
 import BottomFooter from '../../Components/Footer/BottomFooter'
 import AskRiaChat from '../../Components/AskRiaChat'
+import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
 
 
 function MainAllRenewal() {
   return (
     <div>
-          <Header />
-          <Navbar />
+          <Header /> 
           <AllRenewSection />
           <MiddleSection />
           <SocialBar />
-          <FooterServices />
-          <InfoFooter />
-          <InsuranceFooter />
-          <BottomFooter />
+          <Footer />
           <AskRiaChat />
     </div>
   )

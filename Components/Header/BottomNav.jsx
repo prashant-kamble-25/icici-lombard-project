@@ -4,7 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { Link } from "react-router-dom";
 
 
-const Navbar = () => {
+const BottomNav = () => {
     return (
         <nav className="navbar">
             {/* Logo */}
@@ -71,4 +71,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default BottomNav;

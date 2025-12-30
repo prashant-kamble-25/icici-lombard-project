@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './../../Style/header.css'
 
 
-const Header = () => {
+const TopNav = () => {
     const [isLogin, setIsLogin] = useState(false)
 
     const handleLogin = ()=>{
@@ -44,4 +44,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default TopNav;

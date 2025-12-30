@@ -16,7 +16,7 @@ const overlayStyle = {
     justifyContent: "center",
     alignItems: "center",
     zIndex: 1000,
-    color:"black"
+    color: "black"
 };
 
 const modalStyle = {
@@ -33,19 +33,22 @@ const AllRenewSection = () => {
     const [userData, setUserData] = useState(null);
     const [error, setError] = useState("");
     const [showModal, setShowModal] = useState(false);
+    const [loading, setLoading] = useState(false);
 
-    const handleProceed = ()=>{
+
+    const handleProceed = () => {
+        setLoading(true)
         let result = "";
 
-        if(renewType === "Policy Number"){
+        if (renewType === "Policy Number") {
             result = policyData.find(
                 e => e.policyNumber === inputValue
             )
-        } else if (renewType === "Phone Number"){
+        } else if (renewType === "Phone Number") {
             result = policyData.find(
                 e => e.phoneNumber === inputValue
             )
-        } else if (renewType === "Vehicle Registration Number"){
+        } else if (renewType === "Vehicle Registration Number") {
             result = policyData.find(
                 e => e.vehicleNumber === inputValue
             )
@@ -54,16 +57,18 @@ const AllRenewSection = () => {
                 e => e.loanAccountNumber === inputValue
             )
         }
-        
+
         if (result) {
+            
             setUserData(result);
-            setShowModal(true);   
+            setShowModal(true);
             setError("");
-        } else {
+            
+        } else {            
             setUserData(null);
             setError("❌ No record found");
         }
-
+        setLoading(false)
         console.log("Submitted")
     }
     return (
@@ -80,14 +85,14 @@ const AllRenewSection = () => {
                     <li><img src="https://www.icicilombard.com/docs/default-source/angular/assets/images/assured-low-pre.svg" alt="" /> Low premium Assured</li>
                 </ul>
             </div>
-{/* --------------------------------------------- Right side --------------------------------------------------------- */}
+            {/* --------------------------------------------- Right side --------------------------------------------------------- */}
             {/* Right Form */}
             <div className="right-content">
-                
+
                 <div>
-                    
-                <label >Renew with</label>
-                    <select className="dropdown-select" 
+
+                    <label >Renew with</label>
+                    <select className="dropdown-select"
                         value={renewType}
                         onChange={(e) => {
                             setRenewType(e.target.value);
@@ -99,42 +104,41 @@ const AllRenewSection = () => {
                         <option value="Phone Number">Phone number</option>
                         <option value="Vehicle Registration Number">Vehicle registration number</option>
                         <option value="Loan Account Number">Loan account number</option>
-                </select>
+                    </select>
                 </div>
-    
+
                 <label >{renewType}</label> <br />
-                <input 
+                <input
                     type="text"
                     placeholder={renewType}
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
-                     />
-                {error && <p style={{ color: "red", fontSize:"10px" }}>{error}</p>}
+                />
+                {error && <p style={{ color: "red", fontSize: "10px" }}>{error}</p>}
 
                 <button className="proceed-btn" onClick={handleProceed}>Proceed</button>
 
-                {showModal && userData && (
+                { showModal && userData && (
                     <div style={overlayStyle}>
-                        <div style={modalStyle}>                    
-                        
+                        <div style={modalStyle}>
+
                             <h4>User Details</h4>
                             <p><b>Policy:</b> {userData.policyNumber}</p>
                             <p><b>Name:</b> {userData.name}</p>
                             <p><b>Place:</b> {userData.address}</p>
                             <p><b>Phone:</b> {userData.phoneNumber}</p>
-                            <p><b>Email:</b>{userData.emailId}</p> 
+                            <p><b>Email:</b>{userData.emailId}</p>
 
-                            <button onClick={() => setShowModal(false)} 
-                                style={{height:"40px", width:"100%", borderRadius:"10px", color:"red", background:""}}>
+                            <button onClick={() => setShowModal(false)}
+                                style={{ height: "40px", width: "100%", borderRadius: "10px", color: "white", background: "#46aa18ff" }}>
                                 <b>Close</b>
-                            </button>                           
-                          
+                            </button>
                         </div>
                     </div>
                 )}
             </div>
 
-            
+
         </section>
     );
 };
